@@ -3,17 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Worship — Church of The Cross | Evergreen, CO</title>
-  <meta name="description" content="Family-friendly, joyful worship services every Sunday at 10:30 AM at Church of the Cross in Evergreen, CO. Live stream available on YouTube.">
+  <title>Devotional — Church of The Cross | Evergreen, CO</title>
+  <meta name="description" content="Daily devotionals and spiritual reflections from Church of the Cross in Evergreen, CO. Deepen your faith with inspiring readings.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/favicon.png" type="image/png">
+  <style>
+    .devotional-card {
+      background: var(--bg-alt);
+      border-left: 4px solid var(--accent);
+      padding: 32px 36px;
+      margin-bottom: 32px;
+      border-radius: 2px;
+    }
+    .devotional-card .scripture {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--primary);
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    .devotional-card .scripture-ref {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-dark);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .devotional-card h3 {
+      margin-bottom: 12px;
+    }
+  </style>
 </head>
 <body>
 
- 
+  <!-- Easter Banner -->
+  <div class="easter-banner">Christ has died, Christ has RISEN, Christ will come again!</div>
+
   <header class="site-header" id="site-header">
     <div class="header-inner">
       <a href="index.html" class="site-logo">
@@ -34,14 +66,14 @@
               <li><a href="youth.html">Youth</a></li>
             </ul>
           </li>
-          <li class="nav-item has-dropdown active"><a href="#" class="nav-link">Plan A Visit</a>
+          <li class="nav-item has-dropdown"><a href="#" class="nav-link">Plan A Visit</a>
             <ul class="dropdown">
               <li><a href="worship.html">Worship</a></li>
               <li><a href="calendar.html">Calendar</a></li>
             </ul>
           </li>
           <li class="nav-item"><a href="sermons.html" class="nav-link">Sermons</a></li>
-          <li class="nav-item"><a href="devotional.html" class="nav-link">Devotional</a></li>
+          <li class="nav-item active"><a href="devotional.html" class="nav-link">Devotional</a></li>
           <li class="nav-item"><a href="give.html" class="nav-link">Give</a></li>
           <li class="nav-item"><a href="weekly-happenings.html" class="nav-link">Weekly Happenings</a></li>
         </ul>
@@ -58,82 +90,65 @@
     <!-- Hero -->
     <section class="hero" style="background-image: url('images/worship-hero.webp');">
       <div class="hero-content">
-        <span class="overline">Plan A Visit</span>
-        <h1>Family-friendly, joyful worship services that blend the best of contemporary music and traditional liturgy.</h1>
+        <span class="overline">Daily Faith</span>
+        <h1>Devotional</h1>
+        <p>Short, daily reflections rooted in Scripture to encourage and strengthen your walk with God — wherever you are.</p>
+        <div style="margin-top: 2rem;">
+          <a href="https://lp.constantcontactpages.com/sl/gdDAxyG/hello" class="btn btn-accent" target="_blank" rel="noopener">Get Devotionals by Email</a>
+        </div>
       </div>
     </section>
 
-    <!-- Service Details -->
+    <!-- Devotionals -->
     <section class="section">
-      <div class="two-col">
-        <div>
-          <span class="overline">Every Sunday</span>
-          <h2>Join Us for Worship</h2>
-          <p>We gather every Sunday at <strong>10:30 AM</strong> for a service that blends contemporary praise music with the richness of traditional Lutheran liturgy. Our services are welcoming to people of all backgrounds — from lifelong Christians to curious seekers.</p>
-          <p>Can't make it in person? Join us via <strong>live stream on YouTube</strong>. Past services are also available on our YouTube channel.</p>
-          <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
-            <a href="https://www.youtube.com/channel/UCgapPZ-cvSYc31N0Y9PE3ow" class="btn btn-primary" target="_blank" rel="noopener">Watch on YouTube</a>
-            <a href="calendar.html" class="btn btn-outline">See Calendar</a>
-          </div>
-        </div>
-        <div style="background: var(--bg-alt); padding: 40px;">
-          <h3 style="margin-bottom: 24px;">Service Details</h3>
-          <ul class="worship-list">
-            <li><strong>When:</strong>&ensp;Every Sunday at 10:30 AM</li>
-            <li><strong>Where:</strong>&ensp;28253 Meadow Drive, Evergreen, CO 80439</li>
-            <li><strong>Live Stream:</strong>&ensp;YouTube (link in header)</li>
-            <li><strong>Children:</strong>&ensp;Children's Church during service (PreK–Grade 5)</li>
-            <li><strong>Parking:</strong>&ensp;Free, ample on-site parking</li>
-          </ul>
-        </div>
+      <div class="section-header text-center">
+        <span class="overline">Reflections</span>
+        <h2>Recent Devotionals</h2>
+        <p>Each devotional is a short reflection to help you connect with God's word. Sign up to receive new devotionals in your inbox.</p>
       </div>
-    </section>
 
-    <!-- Typical Service -->
-    <section class="section--alt section--full">
-      <div class="section" style="padding-top:0; padding-bottom:0;">
-        <div class="section-header text-center">
-          <span class="overline">What to Expect</span>
-          <h2>A Typical Sunday Service</h2>
-          <p>Here's what a Sunday morning at Church of the Cross looks like. You're welcome to come as you are — dress is casual to business casual.</p>
+      <div style="max-width: 760px; margin: 48px auto 0;">
+
+        <div class="devotional-card">
+          <p class="scripture">"I can do all things through Christ who strengthens me."</p>
+          <span class="scripture-ref">Philippians 4:13</span>
+          <h3>Strength Beyond Our Own</h3>
+          <p>There are moments when life feels too heavy — when the challenges in front of us seem to outpace the strength within us. Paul wrote these words from prison, not from a place of comfort. His confidence wasn't in his own ability, but in the One who walks with us through every season.</p>
+          <p>Today, bring whatever feels heavy to God in prayer. Ask Him to renew your strength, and trust that His power is made perfect in our weakness (2 Corinthians 12:9).</p>
+          <p><em>Lord, thank You that I don't have to face today alone. Strengthen me through Your Spirit, and help me lean on You in every moment. Amen.</em></p>
         </div>
-        <div style="max-width: 680px; margin: 0 auto;">
-          <ul class="worship-list">
-            <li>Praise songs and contemporary worship music</li>
-            <li>Children's lesson and blessing (children are then invited to Children's Church)</li>
-            <li>Scripture reading</li>
-            <li>Message (sermon)</li>
-            <li>Confession of sins and words of absolution</li>
-            <li>Holy Communion (all baptized believers welcome)</li>
-            <li>Prayer for the congregation and community</li>
-            <li>Sending hymn and benediction</li>
-          </ul>
+
+        <div class="devotional-card">
+          <p class="scripture">"Be still, and know that I am God."</p>
+          <span class="scripture-ref">Psalm 46:10</span>
+          <h3>A Moment of Stillness</h3>
+          <p>In our busy, fast-paced lives, stillness can feel like a luxury. But God invites us into it — not as an escape, but as an encounter. To be still is to release our grip on control and acknowledge that God is God, and we are not.</p>
+          <p>Take a few quiet moments today. Put down your phone. Step away from the noise. Simply rest in the knowledge that the God who holds the universe in His hands also holds you.</p>
+          <p><em>Father, quiet my heart and mind. Help me to trust You with what I cannot control and to find peace in Your presence. Amen.</em></p>
         </div>
+
+        <div class="devotional-card">
+          <p class="scripture">"For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."</p>
+          <span class="scripture-ref">John 3:16</span>
+          <h3>The Heart of the Gospel</h3>
+          <p>These may be the most familiar words in all of Scripture — and yet they never grow old. At the center of everything we believe is this: God loves. God gives. God saves. Not because we earned it, but because love is who He is.</p>
+          <p>Let this truth anchor you today. No matter what you are going through, you are known and loved by the Creator of all things. That love sent Jesus — and it holds you now.</p>
+          <p><em>Thank You, God, for Your incredible love. May I never take for granted the gift of Your Son, and may that love overflow into everything I do today. Amen.</em></p>
+        </div>
+
       </div>
-    </section>
 
-    <!-- Summer Worship -->
-    <section class="section">
-      <div class="two-col">
-        <div class="two-col-image">
-          <img src="images/foyer.webp"
-               alt="Church of the Cross exterior" loading="lazy">
-        </div>
-        <div>
-          <span class="overline">Summer</span>
-          <h2>Outdoor Worship Among the Pines</h2>
-          <p>During the summer months, we take worship outside — gathering among Evergreen's beautiful ponderosa pines for open-air services. It's one of the most beloved traditions at Church of the Cross.</p>
-          <p>And yes — <strong>pets are welcome</strong> at our outdoor summer services. Bring the whole family.</p>
-          <p>Check our <a href="calendar.html" style="color:var(--accent); font-weight:700;">calendar</a> for this season's outdoor worship schedule.</p>
-        </div>
+      <div style="text-align: center; margin-top: 48px;">
+        <p style="color: var(--text-light); margin-bottom: 20px;">Want to receive devotionals like these directly in your inbox?</p>
+        <a href="https://lp.constantcontactpages.com/sl/gdDAxyG/hello" class="btn btn-primary" target="_blank" rel="noopener">Sign Up for Our Newsletter</a>
       </div>
     </section>
 
     <!-- CTA -->
     <section class="cta-section">
-      <h2>We look forward to welcoming you!</h2>
-      <p>Whether you're visiting for the first time or returning after years away, there's a place for you at Church of the Cross.</p>
-      <a href="mailto:office@churchotc.com" class="btn btn-primary">Ask Us Anything</a>
+      <h2>Grow deeper in your faith.</h2>
+      <p>Devotionals are just one way we help our community connect with God's word. Join us Sunday mornings or explore our Bible study and growth opportunities.</p>
+      <a href="growth.html" class="btn btn-primary">Explore Growth</a>
     </section>
   </main>
 
@@ -141,7 +156,7 @@
     <div class="footer-main">
       <div class="footer-section">
         <h3>Join Us</h3>
-        <p>Worship: Sundays at 10:30 a.m.</p>
+        <p>Worship: Sundays at 9:30 a.m.</p>
         <address>28253 Meadow Drive<br>Evergreen, CO 80439</address>
         <p style="margin-top:10px;"><a href="tel:3036744130">303-674-4130</a></p>
         <p><a href="mailto:office@churchotc.com">office@churchotc.com</a></p>
