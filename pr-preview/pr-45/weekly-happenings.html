@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Happenings — Church of The Cross | Evergreen, CO</title>
+  <meta name="description" content="See what's happening this week at Church of the Cross in Evergreen, CO. Worship services, Bible studies, youth events, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <style>
+    .weekly-mail {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      gap: 32px;
+    }
+
+    .weekly-mail-card {
+      padding: 32px;
+      background: var(--bg-alt);
+      border-top: 4px solid var(--accent);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .weekly-mail-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .weekly-mail-card h4 {
+      margin: 24px 0 10px;
+      color: var(--primary);
+    }
+
+    .weekly-mail-list,
+    .weekly-mail-events,
+    .weekly-mail-supplies {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .weekly-mail-list li,
+    .weekly-mail-events li,
+    .weekly-mail-supplies li {
+      margin-bottom: 10px;
+    }
+
+    .weekly-mail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .weekly-mail-note {
+      font-style: italic;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      .weekly-mail-card {
+        padding: 24px;
+      }
+
+      .weekly-mail-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Summer Banner -->
+  <div class="summer-banner">Adult Bible Study 8:30, Indoor Worship Service 9:30!</div>
+  <div class="summer-banner">Adult Bible Study 8:30, Indoor School Year Service 9:30!</div>
+
+
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo.webp" alt="Church of the Cross" width="140" height="70">
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown"><a href="#" class="nav-link">Who We Are</a>
+            <ul class="dropdown">
+              <li><a href="about.html">About</a></li>
+              <li><a href="events.html">Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown"><a href="#" class="nav-link">Ministries</a>
+            <ul class="dropdown">
+              <li><a href="outreach.html">Outreach</a></li>
+              <li><a href="growth.html">Growth</a></li>
+              <li><a href="youth.html">Youth</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown"><a href="#" class="nav-link">Plan A Visit</a>
+            <ul class="dropdown">
+              <li><a href="worship.html">Worship</a></li>
+              <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="give.html" class="nav-link">Give</a></li>
+          <li class="nav-item active"><a href="weekly-happenings.html" class="nav-link">Weekly Happenings</a></li>
+        </ul>
+      </nav>
+      <div class="header-social">
+        <a href="https://www.youtube.com/channel/UCgapPZ-cvSYc31N0Y9PE3ow" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="https://www.facebook.com/Evergreenchurchofthecross" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+      </div>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="background-image: url('images/calendar-hero.webp');">
+      <div class="hero-content">
+        <span class="overline">Church of the Cross Mail</span>
+        <h1>Weekly Happenings</h1>
+        <p>Tyler Peterson</p>
+      </div>
+    </section>
+
+    <!-- Weekly Happenings Content -->
+    <section class="section">
+      <div class="section-header text-center">
+        <span class="overline">September 20 – September 26, 2026</span>
+        <h2>This Week at Church of the Cross</h2>
+        <p>Weekly updates, celebrations, service opportunities, and reminders for our church family.</p>
+      </div>
+
+      <div class="weekly-mail">
+        <div class="weekly-mail-grid">
+          <article class="weekly-mail-card">
+            <h3>Happy Anniversary!</h3>
+            <p><strong>Geoff &amp; Suzanne Clark</strong><br>September 24th</p>
+            <p>May God bless you on your anniversary and throughout the year.</p>
+          </article>
+
+          <article class="weekly-mail-card">
+            <h3>Happy Birthday from our church family!</h3>
+            <ul class="weekly-mail-list">
+              <li>Jeanne Cannon — September 21st</li>
+              <li>Ivett Moore — September 21st</li>
+              <li>Orville Strain — September 23rd</li>
+              <li>Barbara Reiss — September 24th</li>
+            </ul>
+          </article>
+        </div>
+
+        <article class="weekly-mail-card">
+          <h3>Serving Our Church on September 13th</h3>
+          <ul class="weekly-mail-list">
+            <li>Usher: Sondra I.</li>
+            <li>Reader: Sondra I.</li>
+            <li>Communion: Janet H.</li>
+            <li>Adult Sunday School: Greta D.</li>
+            <li>Children's Sunday School: Marcee M.</li>
+            <li>Coffee Hour: Potluck — Everyone</li>
+            <li>Altar Set Up/Clean Up: Janet H.</li>
+            <li>Prayer Team: Sondra I.</li>
+          </ul>
+        </article>
+
+        <div class="weekly-mail-grid">
+          <article class="weekly-mail-card">
+            <h3>Adult Bible Study</h3>
+            <p>The Sunday morning Adult Bible Study meets at 9:30 AM in the conference room.</p>
+            <p>The study is focused on <em>Acts: A 12-Week Study</em> by J.I. Packer. Books are available in class for $4.00.</p>
+            <p><strong>September 20th discussion:</strong> Week 3</p>
+            <p>Join the group to learn and share your insight.</p>
+          </article>
+
+          <article class="weekly-mail-card">
+            <h3>Church Attendance</h3>
+            <ul class="weekly-mail-list">
+              <li>August 23 — 40</li>
+              <li>August 30 — 32</li>
+              <li>September 6 — 31</li>
+              <li>September 13 — 48</li>
+            </ul>
+          </article>
+        </div>
+
+        <article class="weekly-mail-card">
+          <h3>Meet with Pastor Tyler</h3>
+          <p>Pastor Tyler welcomes you to meet with him.</p>
+          <p>If you would like to schedule an appointment, please contact him by email at <a href="mailto:tyler@churchotc.com">tyler@churchotc.com</a> or by phone/text at <a href="tel:6512609409">651-260-9409</a>.</p>
+          <p>Tyler's office hours are 11 AM–2 PM on Thursdays.</p>
+        </article>
+
+        <article class="weekly-mail-card">
+          <h3>Shared Calendar</h3>
+          <h4>Events This Week</h4>
+          <p class="weekly-mail-note">Note: Schedule and location change.</p>
+          <h4>Sunday, September 20th</h4>
+          <ul class="weekly-mail-events">
+            <li>8:30 AM — Adult Bible Study in the Conference Room</li>
+            <li>9:30 AM — Indoor Worship Service and Children's Sunday School</li>
+            <li>10:30 AM — Semi-Annual Congregational Meeting and Potluck in the Fellowship Hall</li>
+          </ul>
+          <h4>Tuesday, September 22nd</h4>
+          <ul class="weekly-mail-events">
+            <li>9:15 AM–12:00 PM — Women's Bible Study in the Sanctuary, Fellowship Hall, Prayer Room, Sunday School Room, and Entryway</li>
+            <li>10:00 AM–2:00 PM — Farmers' Market in the parking lot</li>
+            <li>6:00 PM–9:00 PM — Scouts in the Fellowship Hall, Kitchen, and Conference Room</li>
+          </ul>
+          <h4>Wednesday, September 23rd</h4>
+          <ul class="weekly-mail-events">
+            <li>9:30 AM–12:30 PM — Pie Making in the Kitchen &amp; Fellowship Hall</li>
+          </ul>
+          <h4>Thursday, September 24th</h4>
+          <ul class="weekly-mail-events">
+            <li>7:00 PM–8:30 PM — ALANON meeting in the Prayer Room</li>
+          </ul>
+          <p>If you would like events added to the calendar, or would like access to our shared calendar, please contact Ginny at <a href="tel:3038853094">303-885-3094</a>.</p>
+        </article>
+
+        <article class="weekly-mail-card">
+          <h3>Announcements</h3>
+          <h4>Final Pie-Making!</h4>
+          <p>This will be the Pie Ladies' final gathering for the season.</p>
+          <p>Please join them on Wednesday, September 23rd, in the kitchen to make pies from 9:30 AM–12:30 PM.</p>
+          <p>Thanks to Rose, Sondra, and Barb for making 3 pies last week!</p>
+
+          <h4>September Council Meeting</h4>
+          <p>Council met on Tuesday evening and approved the minutes from their August 11th meeting.</p>
+          <p>Please attend our Semi-Annual Congregational Meeting and Potluck this Sunday, September 20th, following the 9:30 indoor worship service.</p>
+
+          <h4>Church Potluck — This Week!</h4>
+          <p>Please bring your favorite dish to share at our congregational meal and semi-annual meeting after church on September 20th.</p>
+
+          <h4>The Lutheran Chorale News</h4>
+          <p>The Lutheran Chorale is an open choral group, and all are welcome to join.</p>
+          <p>They practice every Monday at Concordia Lutheran Church, 13371 W. Alameda Avenue, Lakewood, from 7:00 PM to 8:30 PM. For more information, please contact Christine Krueger at <a href="tel:3033596555">303-359-6555</a>.</p>
+          <p><strong>Upcoming concerts:</strong></p>
+          <ul class="weekly-mail-list">
+            <li>Hymns Triumphant — Sunday, October 11, 2026<br>2:30 PM at Peace Lutheran Church, 5675 Field St., Arvada, CO<br>6:30 PM at Eternal Savior Lutheran Church, 2688 N Park Dr., Lafayette, CO</li>
+            <li>Christmas Around the World — Sunday, December 6, 2026<br>2:30 PM at Concordia Lutheran Church, 13371 W. Alameda Pkwy, Lakewood, CO<br>5:00 PM at Covenant Living of Colorado, 9153 Yarrow St., Westminster, CO</li>
+            <li>Lenten Concert — Sunday, March 7, 2027<br>2:30 PM at Mt. Zion Lutheran Church, 500 Drake St., Denver, CO<br>6:30 PM at Bethlehem Lutheran Church, 2100 Wadsworth Blvd., Lakewood, CO</li>
+            <li>Spring Family Concert — Sunday, May 2, 2026<br>2:30 PM at University Hills Lutheran Church, 4949 E Eastman Avenue, Denver, CO<br>6:30 PM at Shepherd of the Rockies Lutheran Church, 106 Rosalie Rd., Bailey, CO</li>
+          </ul>
+
+          <h4>Help Needed!</h4>
+          <p>Please help us maintain the church yard this summer. Any time you can spend at church mowing, trimming, or weeding the lawn and flowerbeds would be truly appreciated.</p>
+          <p>Come alone or with some friends. Thanks to all who helped this past week!</p>
+
+          <h4>Defibrillator Training Is Coming!</h4>
+          <p>Did you know that Church of the Cross has an automated external defibrillator (AED)? This device is very effective in providing lifesaving treatment to persons experiencing cardiac arrest and can be used effectively by persons with minimal training, according to the U.S. Food and Drug Administration.</p>
+          <p>If you would like to be part of a group who will be trained to use AEDs, please advise a Council member. More information about the date and time of the training will be available soon.</p>
+
+          <h4>Let's Support Stephanie Park!</h4>
+          <p>Stephanie was a valued secretary for our church for many years. She supported us in our daily operations and in prayer.</p>
+          <p>Stephanie is currently working on an Anglican Studies 1-year program which requires her to live apart from her husband, cut back her work to a contract role, and do work-study while focusing on her studies.</p>
+          <p>Once completed, Stephanie will serve as a bivocational Episcopal priest in her home parish and five other small parishes that cannot afford a pastor.</p>
+          <p>She is asking us for prayer and financial aid. If you would like to donate financially, please write “Stephanie Park” in the memo line of your check made out to Church of the Cross and drop it in our donation box. We will write one check to Stephanie at the end of September.</p>
+
+          <h4>Donations Appreciated!</h4>
+          <p>Kathy and the team at World Global Outreach sincerely appreciate our help in gathering supplies for their work in Belize and Honduras. Please place your donations in the designated tub in the kitchen.</p>
+          <p><strong>Requested items:</strong></p>
+          <ul class="weekly-mail-supplies">
+            <li>Adult and children's vitamins</li>
+            <li>Acetaminophen</li>
+            <li>Ibuprofen</li>
+            <li>Pain relief cream (BenGay)</li>
+            <li>Cough drops</li>
+            <li>Cough syrup</li>
+            <li>Folic acid</li>
+            <li>Stool softener (Colace)</li>
+            <li>Benadryl anti-itch cream</li>
+            <li>Red Eye Relief eye drops (not the lubricant ones)</li>
+            <li>Canes / walking sticks</li>
+            <li>Women's hygiene products</li>
+            <li>Incontinence pads</li>
+            <li>Reading glasses: Especially +1.0, +1.25, +1.50, +1.75; also +2.0 and +2.25.</li>
+          </ul>
+          <p><strong>Toys such as:</strong></p>
+          <ul class="weekly-mail-supplies">
+            <li>Cars and trucks — Hot Wheels and larger</li>
+            <li>Cardboard books</li>
+            <li>Read-aloud picture books</li>
+            <li>Blocks</li>
+            <li>Toy dinosaurs</li>
+            <li>Shape sorter</li>
+            <li>Preschool-age LEGOs</li>
+            <li>Card games</li>
+            <li>Ring / beanbag toss</li>
+            <li>Individual-size canisters of Play-Doh</li>
+            <li>Coloring books</li>
+          </ul>
+          <p><strong>Craft supplies:</strong></p>
+          <ul class="weekly-mail-supplies">
+            <li>Beads (black, red, yellow, white, green)</li>
+            <li>Elasticized string for bead bracelets</li>
+          </ul>
+
+          <h4>Farmers' Market Is Still Open!</h4>
+          <p>The Farmers' Market summer sale takes place in our parking lot on Tuesdays each week. The market is open from 10 AM until 2 PM through September 29th.</p>
+          <p>The market offers a huge variety of goods from food and produce to jewelry, clothing, and services, including our famous pies.</p>
+          <p>Thanks to Jane, Tom, Rose, and Orville for selling our pies. Thank you Orville, Dale, Bob, Tom, and Tyler for setting up and taking down our tent each week!</p>
+
+          <h4>Ways You Can Volunteer</h4>
+          <p>It takes everyone working together to help our church operate smoothly.</p>
+        </article>
+      </div>
+    </section>
+
+  
+    <!-- CTA -->
+    <section class="cta-section">
+      <h2>New here? We'd love to meet you.</h2>
+      <p>Whether this is your first visit or you've been with us for years, there's always something happening at Church of the Cross. Come as you are!</p>
+      <a href="worship.html" class="btn btn-primary">Plan A Visit</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-section">
+        <h3>Join Us</h3>
+        <p>Worship: Sundays at 9:30 a.m.</p>
+        <address>28253 Meadow Drive<br>Evergreen, CO 80439</address>
+        <p style="margin-top:10px;"><a href="tel:3036744130">303-674-4130</a></p>
+        <p><a href="mailto:office@churchotc.com">office@churchotc.com</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Stay in Touch</h3>
+        <p>Get to know Church of the Cross through our newsletters, devotionals, and other inspiring content. Or come meet us at one of our upcoming services, Bible studies, or meet ups.</p>
+        <a href="https://lp.constantcontactpages.com/sl/gdDAxyG/hello" class="btn btn-outline-white" target="_blank" rel="noopener">Sign Up</a>
+        <div class="footer-social">
+          <a href="calendar.html" aria-label="Calendar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2a1 1 0 0 1 1 1v1h6V3a1 1 0 1 1 2 0v1h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2V3a1 1 0 0 1 1-1zm-3 8v10h14V10H5z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCgapPZ-cvSYc31N0Y9PE3ow" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          <a href="https://www.facebook.com/Evergreenchurchofthecross" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright"><p>© 2021–2024 Church of the Cross</p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
