@@ -42,6 +42,20 @@
 }
 
 /* ----------------------------------------
+   SUMMER BANNER
+   ---------------------------------------- */
+.summer-banner {
+  background: #2e7d32;
+  color: var(--white);
+  text-align: center;
+  padding: 10px var(--gutter);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* ----------------------------------------
    RESET / BASE
    ---------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
